@@ -1,7 +1,10 @@
-main()
+#include <stdio.h>
+#include "../utils/getcha.h"
+
+int main()
 {
 	char a[] = "Hello world";
-	char *ap = "Goodbye world";
+	const char *ap = "Goodbye world";
 
 	int i = 0;
 
@@ -15,5 +18,6 @@ main()
 		printf("Addr:%x, %c\n",a+i,a[i]);
 		i++;
 	}
-	getch();
+	GETCHA();
+	return 0;
 }
