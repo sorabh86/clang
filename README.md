@@ -1,6 +1,10 @@
 # C Language Practise
 This is a basic practise project for c language
 
+```bash
+rm -rf *.o *.exe
+```
+
 ## 01.CONSTANTS
 
 #### Instructions
