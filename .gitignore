@@ -1,0 +1,59 @@
+# Ignore build and binary files
+/build/
+/bin/
+/obj/
+*.exe
+*.out
+*.app
+*.o
+*.so
+*.a
+*.dll
+*.dylib
+
+# Ignore CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Ignore Visual Studio files
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.sln
+*.pdb
+*.idb
+*.ipch
+/.vs/
+
+# Ignore CLion and JetBrains IDE files
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# Ignore VS Code settings
+.vscode/
+*.code-workspace
+
+# Ignore logs and debugging files
+*.log
+*.dmp
+*.stackdump
+
+# Ignore dependencies
+/vendor/
+/deps/
+/third_party/
+
+# Ignore generated documentation
+/docs/doxygen/
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+*~
+Thumbs.db
+.DS_Store
