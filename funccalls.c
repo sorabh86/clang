@@ -1,22 +1,26 @@
 #include <stdio.h>
 
-int main()
-{
-     func1();
-     func2();
-     func3();
+// Function declarations (prototypes)
+int func1(void);
+int func2(void);
+int func3(void);
 
-     return 0;
+int main(void) {
+    func1();
+    func2();
+    func3();
+    
+    return 0;
 }
-func1()
-{
-     return printf("I am function 1\n");
+
+int func1(void) {
+    return printf("I am function 1\n");
 }
-func2()
-{
-     return printf("I am function 2\n");
+
+int func2(void) {
+    return printf("I am function 2\n");
 }
-func3()
-{
-     return printf("I am function 3\n");
+
+int func3(void) {
+    return printf("I am function 3\n");
 }
