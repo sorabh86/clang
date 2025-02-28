@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "utils/getcha.h"d
+#include "../utils/getcha.h"
 
 int main() {
     char a[] = "Hello world";

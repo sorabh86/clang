@@ -1,10 +1,17 @@
+#include <stdio.h>
+
+// Declare external variables
 extern int v1, v2, v3;
+extern void hello();
+extern void func1();
+extern void func2();
+extern void func3();
 
-int vm=0;
+int vm = 0;
 
-main() {
+int main() {
     hello();
-    printf("main, vm=%d, v1=%d, v2=%d, v3=%d\n", vm, v1, v2, v3);
+    printf("\nmain, vm=%d, v1=%d, v2=%d, v3=%d\n", vm, v1, v2, v3);
     
     v1++;
     func1();
@@ -14,6 +21,6 @@ main() {
     
     v3++;
     func3();
-    
-    system("pause");
+
+    return 0;
 }

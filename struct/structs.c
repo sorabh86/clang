@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 struct apt{
        int MBedroom;
        int Bedroom;
@@ -16,5 +18,5 @@ int main(int argc, char *argv[])
     printf("Bath: %f\n", MyPlace.Bath);
     printf("My Bath: %f\n", MyPlace.MBath);
     
-    getch();
+    return 0;
 }
