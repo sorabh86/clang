@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-  
-  system("PAUSE");	
+  func1();
+  // system("PAUSE");	
   return 0;
 }

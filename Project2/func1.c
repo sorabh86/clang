@@ -1,4 +1,6 @@
-func1()
+#include <stdio.h>
+
+void func1()
 {
-    return printf("func1 called");
+    printf("func1 called");
 }
