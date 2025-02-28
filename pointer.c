@@ -1,21 +1,25 @@
-main()
-{
+#include <stdio.h>
+#include "utils/getcha.h"d
 
-	char a[] = "Hello world";
-	char *ap = a;
+int main() {
+    char a[] = "Hello world";
+    char *ap = a;
+    int i = 0;
 
-	int i = 0;
-	
-	while(*ap)
-	{
-		printf("Addr: %x, %c\n", ap, *ap);
-		ap++;
-	}
+    // Print the address and character values
+    while (*ap) {
+        printf("Addr: %p, %c\n", (void*)ap, *ap);  // Corrected %x to %p for pointer
+        ap++;
+    }
 
-	for(ap = a, i=0; i < 20; i++)
-	{
-		*(ap+i) = '\0';
-	}
-	
-	getch();
+    // Reset pointer to start of array
+    ap = a;
+
+    // Properly clearing the array
+    for (i = 0; i < sizeof(a); i++) {
+        *(ap + i) = '\0';
+    }
+
+    GETCHA();
+    return 0;
 }
